@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f5f5;
+}
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 18px 80px;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.menu a {
+    margin-left: 28px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #7cb342;
+    transition: 0.3s;
+}
+
+.menu a:hover::after,
+.menu a.active::after {
+    width: 100%;
+}
+.cv-hero {
+    display: flex;
+    min-height: 100vh;
+    padding-top: 90px;
+}
+.cv-content {
+    width: 50%;
+    padding: 80px;
+    background: #fff;
+}
+
+.cv-name {
+    font-size: 56px;
+    font-weight: 800;
+}
+
+.cv-social a {
+    margin-right: 12px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.cv-job {
+    color: #7cb342;
+    margin: 20px 0;
+}
+
+.cv-desc {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.cv-title {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 20px;
+    background: rgba(124,179,66,0.15);
+    margin-bottom: 12px;
+}
+
+.cv-section {
+    margin-bottom: 35px;
+}
+
+.cv-list {
+    list-style: none;
+}
+
+.cv-list li {
+    margin-bottom: 6px;
+}
+
+.cv-image {
+    width: 50%;
+}
+
+.cv-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background: #111;
+    color: #fff;
+    font-size: 32px;
+}
+.features {
+    margin-top: 40px;
+}
+.about {
+    display: flex;
+    padding: 80px;
+    background: #fff;
+}
+
+.about-img img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.about-text {
+    margin-left: 40px;
+}
+.contact-links {
+    text-align: center;
+    padding: 60px;
+    background: #111;
+    color: #fff;
+}
+
+.links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background: #7cb342;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #7cb342;
+    color: #fff;
+}
+section {
+    scroll-margin-top: 100px;
+}
+section {
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
